@@ -89,115 +89,17 @@
         return $('.left_facebook').toggle("slow");
       });
     }).call(this);</script>
-      <link href="css/slider.css" rel="stylesheet" type="text/css" />
-      <link href="css/index.css" rel="stylesheet" type="text/css" />
-      <script type="text/javascript" src="js/slider.js"></script>
-      <div id="BANNER" ng_controller="sliderCtrl">
-        <div id="pciRunBlock">
-          <div id="player">
-            <ul class="list">
-              <li id="lidiv_0">
-                <img src="images/index/{{imgs.bg[0]}}" />
-              </li>
-              <li id="lidiv_1">
-                <img src="images/index/{{imgs.bg[1]}}" />
-              </li>
-              <li id="lidiv_2">
-                <img src="images/index/{{imgs.bg[2]}}" />
-              </li>
-              <li id="lidiv_3">
-                <img src="images/index/{{imgs.bg[3]}}" />
-              </li>
-              <li id="lidiv_4">
-                <img src="images/index/{{imgs.bg[4]}}" />
-              </li>
-              <li id="lidiv_5">
-                <img src="images/index/{{imgs.bg[5]}}" />
-              </li>
-              <li id="lidiv_6">
-                <img src="images/index/{{imgs.bg[6]}}" />
-              </li>
-              <li id="lidiv_7">
-                <img src="images/index/{{imgs.bg[7]}}" />
-              </li>
-              <li id="lidiv_8">
-                <img src="images/index/{{imgs.bg[8]}}" />
-              </li>
-            </ul>
+      <div id="comingsoon" class="comingsoon_page">
+        <div class="container">
+          <div class="countdown">
+            <div class="row">
+              <div class="span8 offset1 left">
+                <h1>This page is coming noon...</h1>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="pciRunBlock2">
-          <div id="player2">
-            <ul class="list2">
-              <li id="lidiv2_0">
-                <img src="images/index/{{imgs.ag[0]}}" />
-              </li>
-              <li id="lidiv2_1">
-                <img src="images/index/{{imgs.ag[1]}}" />
-              </li>
-              <li id="lidiv2_2">
-                <img src="images/index/{{imgs.ag[2]}}" />
-              </li>
-              <li id="lidiv2_3">
-                <img src="images/index/{{imgs.ag[3]}}" />
-              </li>
-              <li id="lidiv2_4">
-                <img src="images/index/{{imgs.ag[4]}}" />
-              </li>
-              <li id="lidiv2_5">
-                <img src="images/index/{{imgs.ag[5]}}" />
-              </li>
-              <li id="lidiv2_6">
-                <img src="images/index/{{imgs.ag[6]}}" />
-              </li>
-              <li id="lidiv2_7">
-                <img src="images/index/{{imgs.ag[7]}}" />
-              </li>
-              <li id="lidiv2_8">
-                <img src="images/index/{{imgs.ag[8]}}" />
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="COVER">
-        </div>
       </div>
-      <div class="div_thumbnails">
-        <ul class="thumbnails">
-          <li class="span3">
-            <div class="thumbnail">
-              <img style="width:300px;height:300px;" />
-              <h3>Thumbnail label</h3>
-              <p>Thumbnail caption...</p>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <img style="width:350px;height:300px;" />
-              <h3>Thumbnail label</h3>
-              <p>Thumbnail caption...</p>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <img style="width:350px;height:300px;" />
-              <h3>Thumbnail label</h3>
-              <p>Thumbnail caption...</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <script>var __slice = Array.prototype.slice;var __hasProp = Object.prototype.hasOwnProperty;var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };var __extends = function(child, parent) {  for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; }  function ctor() { this.constructor = child; }  ctor.prototype = parent.prototype; child.prototype = new ctor; child.__super__ = parent.prototype;  return child; };var __indexOf = Array.prototype.indexOf || function(item) {  for (var i = 0, l = this.length; i < l; i++) {    if (this[i] === item) return i;  } return -1; };(function () {
-      return window.sliderCtrl = function($scope, $http, $location) {
-        return $scope.$on("$locationChangeSuccess", function(oldLocation, newUrl) {
-          var sobj;
-          sobj = $location.search();
-          return $http.get("data/index.json").success(function(prod) {
-            return $scope.imgs = prod.imgs;
-          });
-        });
-      };
-    }).call(this);</script>
     </div>
     <div id="footer_wrap" class="outer">
       <div class="inner">
