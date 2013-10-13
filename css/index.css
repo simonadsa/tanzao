@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+
+
+#BANNER { clear:both;display:block;width:1000px; height:366px; position:relative;margin: 0 auto 40px; opacity:0.75;}
+#BANNER #COVER { width:1000px; height:366px; background:url(../images/banner_cover.png) left top no-repeat; position:absolute; left:0; top:100px;z-index: 1;}
+.div_thumbnails {width:1000px; margin: auto auto;}
